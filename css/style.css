@@ -25,11 +25,11 @@
 
 
 /*============Start Button CSS===========*/
-.btn-orange{border-radius:65px; background-color: var(--orange-color); border:1px solid var(--orange-color); color: var(--whiteColor); font-size: var(--font-common); line-height: 18px; padding: 14px 24px; display: inline-block;}
+.btn-orange{border-radius:65px; background-color: var(--orange-color); border:1px solid var(--orange-color); color: var(--whiteColor); font-size: var(--font-common); line-height: 18px; padding: 14px 24px; display: inline-block; height: 52px;}
 .btn-orange:hover{ background-color:transparent; border:1px solid var(--whiteColor); color:var(--whiteColor); }
 .green-btn{ font-size:var(--font-common); font-weight:bold; color:#B2E600; border-radius:65px; padding:8px 20px; border:1px solid #B2E600; height:40px; font-family: "Montserrat", sans-serif; }
 .green-btn:hover{ color:var(--whiteColor); }
-.btn-black{border-radius:65px; background-color: transparent; color: var(--whiteColor); font-size: var(--font-common); line-height: 18px; padding: 14px 24px; border:1px solid var(--whiteColor); display: inline-block;}
+.btn-black{border-radius:65px; background-color: transparent; color: var(--whiteColor); font-size: var(--font-common); line-height: 18px; padding: 14px 24px; border:1px solid var(--whiteColor); display: inline-block; height: 52px;}
 .btn-black:hover{ color:var(--whiteColor); }
 .btn-custom-1{ background-color:#262627; border-radius:51px; padding:12px; color:#828289; font-size:var(--font-common); font-weight:bold; text-align:center; width:calc(100%); }
 .btn-custom-1:hover{ background-color:var(--orangeEE6); color:var(--whiteColor); }
@@ -104,6 +104,7 @@ header.header-section nav ul li a.active{background-color: var(--dark-blue); col
 .use-address a{ font-size:var(--font-common); color:#767676; line-height:normal; }
 .use-address::after{content:""; position: absolute; right: 0; top: 50%; width: 4.72px; height: 8.19px; border: solid #535353; border-width: 0 1px 1px 0;  padding: 3px; transform: translate(-50%, -50%) rotate(-45deg) ;}
 .header-right{ display:flex; }
+.mobile-navbar{ display:flex; }
 .cart-details{ padding-left:36px; }
 .cart-sec{ width:40px; height:40px; border-radius:50%; background-color:#222225; cursor:pointer; margin-right:9px; position:relative; }
 .orange-round{ position:absolute; top: 0; right: 0; height:12px; width:12px; border-radius:50%; background-color:var(--orange-color); }
@@ -114,6 +115,7 @@ header.header-section nav ul li a.active{background-color: var(--dark-blue); col
 .banner-section{ min-height:780px; position:relative; }
 .banner-info{ max-width:880px; margin:auto; position:absolute; bottom:0; left:0; right:0; }
 .banner-info p{ font-size:var(--font-common); color:var(--whiteColor); }
+.banner-btn{display:flex; gap:16px; justify-content:flex-end; }
 /*============End Banner CSS===========*/
 
 /*============Start Laguage CSS===========*/
@@ -276,7 +278,32 @@ footer p{ font-size:14px; color:var(--whiteColor); text-align:center; margin-top
 
 }
 @media screen and (max-width: 767px) {
-  
+  h1{ font-size:30px; }
+  .header-section .header-right{ display:none; }
+  .mobile-navbar{ flex-direction:row-reverse; align-items:center; }
+  .use-address{ background-color:#222225; border-radius:51px; padding:10px 35px 10px 20px; height:41px; }
+  .use-address::after{ right:15px; }
+  .use-address a{ font-size:12px; }
+  .header-left{ justify-content:space-between; }
+  header.header-section .navbar-toggler{ padding-right:0; }
+  header.header-section .navbar-toggler-icon{ background-image:url('../images/bar.png'); background-repeat:no-repeat; background-size:16px; background-color:#222225; width:40px; height:40px; border-radius:50%; }
+  header.header-section .navbar-toggler:focus{ box-shadow:none; }
+  header.header-section nav.navbar{ position:static; }
+  header.header-section .navbar-collapse{ position:absolute; right:0; top:80px; }
+  header.header-section nav.navbar-expand-lg ul.navbar-nav{ padding:0; }
+  header.header-section nav.navbar-expand-lg ul.navbar-nav li a.nav-link{ text-align:right; }
+  .header-banner{ background-image:url('../images/hero-mobile.jpg'); }
+
+  .banner-section{ min-height:708px; }
+  .banner-btn{ text-align:center; flex-direction:column; margin-top:56px; }
+  .banner-btn a{ display:block; width:250px; margin:auto; }
+  .banner-info{ bottom:170px; }
+  .banner-info p{ text-align:center; }
+  .lang-compare h2{ font-size:30px; }
+  .heading-style2{ font-size:30px; }
+  .our-advantages-col h3{ font-size:40px; line-height:normal; }
+  .visit-sources{ flex-direction:column; }
+
 }
 @media screen and (max-width: 590px) {
   
