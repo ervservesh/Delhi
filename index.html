@@ -190,12 +190,12 @@
 		</section>
 
 		<section class="proceed-section">
-			<h2 class="heading-style2 text-uppercase text-center">Не знаете что выбрать?</h2>
+			<h2 class="heading-style2 text-uppercase text-center">уже проголодались?</h2>
 			<div class="container-fluid proceed-container">
 				<section class="regular slider">
 				    <div class="proceed-col position-relative">
-				      	<div class="text-center position-relative">
-				      		<img class="m-auto" src="images/product-1.png" alt="Product" width="80%" />
+				      	<div class="proceed-col-img text-center position-relative">
+				      		<img class="m-auto" src="images/product-2.png" alt="Product" width="80%" />
 				      		<div class="img-effect-round effect-round-small"></div>
 				      	</div>
 				      	<div class="proceed-col-inner">
@@ -208,8 +208,8 @@
 						</div>
 				    </div>
 				    <div class="proceed-col position-relative">
-				      	<div class="text-center position-relative">
-				      		<img class="m-auto" src="images/product-1.png" alt="Product" width="80%" />
+				      	<div class="proceed-col-img text-center position-relative">
+				      		<img class="m-auto" src="images/product-2.png" alt="Product" width="80%" />
 				      		<div class="img-effect-round effect-round-small"></div>
 				      	</div>
 				      	<div class="proceed-col-inner">
@@ -222,8 +222,8 @@
 						</div>
 				    </div>
 				    <div class="proceed-col position-relative">
-				      	<div class="text-center position-relative">
-				      		<img class="m-auto" src="images/product-1.png" alt="Product" width="80%" />
+				      	<div class="proceed-col-img text-center position-relative">
+				      		<img class="m-auto" src="images/product-2.png" alt="Product" width="80%" />
 				      		<div class="img-effect-square effect-square-small"></div>
 				      	</div>
 				      	<div class="proceed-col-inner">
@@ -236,8 +236,8 @@
 						</div>
 				    </div>
 				    <div class="proceed-col position-relative">
-				      	<div class="position-relative">
-				      		<img class="m-auto" src="images/product-1.png" alt="Product" width="80%" />
+				      	<div class="proceed-col-img position-relative">
+				      		<img class="m-auto" src="images/product-2.png" alt="Product" width="80%" />
 				      		<div class="triangle-3 triangle-position"></div>
 				      	</div>
 				      	<div class="proceed-col-inner">
@@ -250,8 +250,8 @@
 						</div>
 				    </div>
 				    <div class="proceed-col position-relative">
-				      	<div class="text-center position-relative">
-				      		<img class="m-auto" src="images/product-1.png" alt="Product" width="80%" />
+				      	<div class="proceed-col-img text-center position-relative">
+				      		<img class="m-auto" src="images/product-2.png" alt="Product" width="80%" />
 				      		<div class="img-effect-round effect-round-small"></div>
 				      	</div>
 				      	<div class="proceed-col-inner">
@@ -264,8 +264,8 @@
 						</div>
 				    </div>
 				    <div class="proceed-col position-relative">
-				      	<div class="text-center position-relative">
-				      		<img class="m-auto" src="images/product-1.png" alt="Product" width="80%" />
+				      	<div class="proceed-col-img text-center position-relative">
+				      		<img class="m-auto" src="images/product-2.png" alt="Product" width="80%" />
 				      		<div class="img-effect-round effect-round-small"></div>
 				      	</div>
 				      	<div class="proceed-col-inner">
@@ -278,8 +278,8 @@
 						</div>
 				    </div>
 				    <div class="proceed-col position-relative">
-				      	<div class="text-center position-relative">
-				      		<img class="m-auto" src="images/product-1.png" alt="Product" width="80%" />
+				      	<div class="proceed-col-img text-center position-relative">
+				      		<img class="m-auto" src="images/product-2.png" alt="Product" width="80%" />
 				      		<div class="img-effect-round effect-round-small"></div>
 				      	</div>
 				      	<div class="proceed-col-inner">
@@ -314,8 +314,18 @@
 				<div class="row our-advantages-2">
 					<div class="col-sm-12 col-md-6 col-lg-6">
 						<div class="our-advantages-img position-relative meal-img">
-							<img class="bread" src="images/bread.png" alt="Bread" />
-							<img class="meal" src="images/meal.png" alt="Products" />
+							<picture>
+							  <!-- <source media="(min-width:650px)" srcset="img_pink_flowers.jpg"> -->
+							  <source media="(min-width:320px)" srcset="images/meal-mob.png">
+							  <img class="meal" src="images/meal.png" alt="Meal">
+							</picture>
+							<picture>
+							  <!-- <source media="(min-width:650px)" srcset="img_pink_flowers.jpg"> -->
+							  <source media="(min-width:320px)" srcset="images/bread-mob.png">
+							  <img class="bread" src="images/bread.png" alt="Meal">
+							</picture>
+							<!-- <img class="bread" src="images/bread.png" alt="Bread" /> -->
+							<!-- <img class="meal" src="images/meal.png" alt="Products" /> -->
 						</div>
 					</div>
 					<div class="col-sm-12 col-md-6 col-lg-6">
@@ -473,7 +483,7 @@
 	      breakpoint: 767,
 	      settings: {
 	      slidesToShow: 2,
-	      dots: false
+	      dots: true
 	      }
 	    }
 	    ]

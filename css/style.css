@@ -31,7 +31,7 @@
 .green-btn:hover{ color:var(--whiteColor); }
 .btn-black{border-radius:65px; background-color: transparent; color: var(--whiteColor); font-size: var(--font-common); line-height: 18px; padding: 14px 24px; border:1px solid var(--whiteColor); display: inline-block; height: 52px;}
 .btn-black:hover{ color:var(--whiteColor); }
-.btn-custom-1{ background-color:#262627; border-radius:51px; padding:12px; color:#828289; font-size:var(--font-common); font-weight:bold; text-align:center; width:calc(100%); }
+.btn-custom-1{ background-color:#262627; border-radius:51px; padding:12px; color:#828289; font-size:var(--font-common); font-weight:bold; text-align:center; width:calc(100%); height:40px; }
 .btn-custom-1:hover{ background-color:var(--orangeEE6); color:var(--whiteColor); }
 .btn-custom-1 img{ opacity:0.6; }
 /*============End Button CSS============*/
@@ -132,7 +132,7 @@ header.header-section nav ul li a.active{background-color: var(--dark-blue); col
 
 /*============Start Product List CSS===========*/
 .what-to-do{ padding:75px 0; }
-.product-list-wrap{ background-color:rgba(28, 28, 28, 45%); border-radius:27.5px;border:1px solid rgba(28, 28, 28, 45%); height:100%; position:relative; padding-bottom:95px; }
+.product-list-wrap{ background-color:rgba(28, 28, 28, 45%); border-radius:27.5px;border:1px solid rgba(28, 28, 28, 45%); height:100%; position:relative; padding-bottom:95px; overflow:hidden; }
 .product-list-wrap:hover{ border:1px solid var(--orangeEE6);border-radius:27.5px; }
 .product-list-inner{ padding:27.5px 39px; }
 .product-list-inner h4{ margin-bottom:15px; }
@@ -173,10 +173,11 @@ header.header-section nav ul li a.active{background-color: var(--dark-blue); col
     max-width: 100%;
     position: relative;
     overflow: hidden;
-    height: 390px;
+    min-height: 390px;
 }
 .proceed-col{ background-color:rgba(28, 28, 28, 45%); border-radius: 16px;}
 .proceed-col-inner{ padding:16px 24px 24px 24px; }
+.proceed-col-img{ margin-top:-65px; }
 .prd-name{ font-size:var(--font-common); font-family: "Montserrat", sans-serif; line-height: 20px; color: var(--whiteColor);}
 .effect-round-small{ width:35px; height:35px;right: 0; bottom: 4px; left: 128px; margin: auto; }
 .effect-square-small{width:24px; height:48.92px;right: 0; bottom: -14px; left: 120px; margin: auto; border-radius: 7px;}
@@ -292,17 +293,78 @@ footer p{ font-size:14px; color:var(--whiteColor); text-align:center; margin-top
   header.header-section .navbar-collapse{ position:absolute; right:0; top:80px; }
   header.header-section nav.navbar-expand-lg ul.navbar-nav{ padding:0; }
   header.header-section nav.navbar-expand-lg ul.navbar-nav li a.nav-link{ text-align:right; }
-  .header-banner{ background-image:url('../images/hero-mobile.jpg'); }
+  .header-banner{ background-image:url('../images/hero-mobile.jpg'); padding-bottom:0; }
 
-  .banner-section{ min-height:708px; }
+  .banner-section{ min-height:575px; }
   .banner-btn{ text-align:center; flex-direction:column; margin-top:56px; }
   .banner-btn a{ display:block; width:250px; margin:auto; }
-  .banner-info{ bottom:170px; }
+  .banner-info{ bottom:45px;  max-width:285px; }
   .banner-info p{ text-align:center; }
-  .lang-compare h2{ font-size:30px; }
+  .lang-compare h2{ font-size:30px; text-align:left !important; padding-bottom: 30px;}
+  .lang-compare{ padding:0 20px; }
+  .lang-compare p{ margin-bottom:30px; }
+  .lang-compare a.btn-orange{ display:block;text-align: center; width: 80%; margin: auto; }
   .heading-style2{ font-size:30px; }
   .our-advantages-col h3{ font-size:40px; line-height:normal; }
-  .visit-sources{ flex-direction:column; }
+  .visit-sources{ display: grid; grid-template-columns: 48% 48%;padding: 0 30px;align-items: center;justify-content: center; margin-bottom:30px; }
+  .visit-sources li{padding: 4px 20px; text-align: center;}
+  .bycycle-col img{width: 38px;}
+  .train-col{ order:4; }
+  .train-col img{ width:30px; }
+  .bus-col{ order:1; }
+  .bus-col img{width:30px;}
+  .walking-col{ order:3; }
+  .walking-col img{ width:20px; }
+  .what-lang-wrap{ min-height:320px; }
+  .what-lang-wrap{background-image:url('../images/indian-cuisine-mob.png'); padding: 90px 50px 0px 50px;}
+  .lang-btn-section{ margin-top:20px; }
+  .lang-btn-section a{ display:block; }
+  .lang-compare-wrap{background-image:url('../images/language-compare-bg-mob.png'); background-position: center 0px; min-height: 710px;}
+  .what-to-do{ padding:50px 0; }
+  .what-to-do .row > div{ margin-bottom:20px; }
+  .product-list-inner{ padding:25px 30px; }
+  .btn-plus-minus{ padding:10px 14px; width: 80%; left: 0; right: 0; margin: auto; bottom:30px; }
+  .toggle-btn{ margin-bottom:0; }
+  .product-list-inner h5{ font-size:14px; padding-right:20px; }
+  .prod-tags {display: flex; flex-direction: column; align-items: flex-start;}
+  .product-list-wrap{ padding-bottom:78px; }
+  .product-list-wrap img{ max-width:85%; }
+  .proceed-container .regular{ left:0;min-height: 350px; }
+  .proceed-col-inner .rate{ font-size:12px; }
+  .proceed-col-inner h5{ font-size:14px; }
+  .prd-name{ font-size:10px; }
+  .proceed-container .slick-initialized .slick-slide{ margin-right:17px; }
+  .proceed-col-img{ margin-top:12px; }
+  .effect-round-small{ bottom: -5px; left: 88px;}
+  .proceed-container .regular .slick-next.slick-arrow,.proceed-container .regular .slick-prev.slick-arrow{ display:none !important; }
+  .proceed-container .regular .slick-dots{ margin-top:20px; justify-content:center; }
+  .proceed-section h2{ padding:0 20px 20px 20px; }
+  .proceed-col-inner {padding: 10px 10px 10px 10px;}
+  .our-advantages{ padding:50px 20px; }
+  .effect-square-advantage{ display:none; }
+  .our-advantages-col{ padding:17px 10px; border-radius:49.33px; height:225px; }
+  .our-advantages-col p{ margin:20px auto 0; }
+  .our-advantages-1{ flex-direction:column-reverse; }
+  .meal-img{ margin-top:-40px; }
+  .bread {top: 20px; width: 118px;}
+  .our-advantages-col2{ margin-top:0; }
+  .advantages-triangle{ display:none; }
+  .our-advantages-3{ flex-direction:column-reverse; }
+  .our-advantages-col3{ margin-top:0; }
+  .img-effect-round{ display:none; }
+  .img-effect-square{ display:none; }
+  .visit-section{ padding:0 0 50px 0; }
+  .visit-section h3{ text-align:center; padding: 0px 58px; }
+  .visit-section .paragraph{ text-align:center; } 
+  .map img{height: 452px; object-fit: cover;}
+  .faq-info{ padding-right:0; padding-bottom:30px; }
+  .faq-info h3{ text-align:center; padding:0 50px; }
+  .faq-info p{ text-align:center; }
+  .faq-info .btn-orange{display: block; text-align: center; width: 80%; margin: auto;}
+  .faq-col{ padding:0 20px; }
+  .faq-section{ padding-bottom:30px; }
+  .footer-menu ul{ flex-direction:column; }
+  .footer-menu ul li{ text-align:center; }
 
 }
 @media screen and (max-width: 590px) {
